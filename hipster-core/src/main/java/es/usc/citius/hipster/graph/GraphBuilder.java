@@ -39,12 +39,6 @@ public class GraphBuilder<V, E> {
         private V vertex2;
         private E edge;
 
-        private Connection(V vertex1, V vertex2, E edge) {
-            this.vertex1 = vertex1;
-            this.vertex2 = vertex2;
-            this.edge = edge;
-        }
-
         private Connection(V vertex1, V vertex2) {
             this.vertex1 = vertex1;
             this.vertex2 = vertex2;
