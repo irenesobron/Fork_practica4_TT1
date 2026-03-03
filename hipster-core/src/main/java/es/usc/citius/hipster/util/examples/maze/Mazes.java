@@ -8,7 +8,7 @@ package es.usc.citius.hipster.util.examples.maze;
  * @author Pablo Rodríguez Mier <<a href="mailto:pablo.rodriguez.mier@usc.es">pablo.rodriguez.mier@usc.es</a>>
  */
 public final class Mazes {
-
+    private String S = 'S';
     private Mazes(){
 
     }
@@ -86,7 +86,7 @@ public final class Mazes {
             "                       XXX       ",
             "                       XXX       ",
             "                       XXX       ",
-            "           S                     ",
+            "           "+S+"                     ",
             "                                 "};
 
     /**
@@ -104,7 +104,7 @@ public final class Mazes {
             "                       XXX       ",
             "                       XXX       ",
             "                       XXX       ",
-            "           S                     ",
+            "           "+S+"                     ",
             "                                 "};
 
 
@@ -123,7 +123,7 @@ public final class Mazes {
             "|         //  //                             |",
             "|                                            |",
             "|                                            |",
-            "|                   S                        |",
+            "|                   "+S+"                        |",
             "|                                            |"
     };
 
