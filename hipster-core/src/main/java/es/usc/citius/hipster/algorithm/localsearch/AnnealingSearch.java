@@ -117,8 +117,7 @@ public class AnnealingSearch<A, S, N extends HeuristicNode<A, S, Double, N>> ext
 					for (N successor : nodeExpander.expand(node)) {
 						successors.add(successor);
 					}
-				
-					return successors.get(Math.abs(RANDOM.nextInt()) % successors.size());
+					return successors.get(RANDOM.nextInt(successors.size()));
 				}
 			};
 		}
@@ -202,4 +201,5 @@ public class AnnealingSearch<A, S, N extends HeuristicNode<A, S, Double, N>> ext
 		N estimate(N node, NodeExpander<A, S, N> nodeExpander);
 	}
 }
+
 
